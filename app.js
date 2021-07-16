@@ -86,7 +86,7 @@ function onListening() {
   console.log(`Listening on ${bind}`.red.underline.bold);
 }
 
-server.listen(port);
+server.listen(process.env.PORT);
 server.on('error', onError);
 server.on('listening', onListening);
 
