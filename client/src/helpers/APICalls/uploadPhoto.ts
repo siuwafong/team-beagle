@@ -2,7 +2,7 @@ const uploadPhoto = async (name: string, file: string | Blob): Promise<any> => {
   const data = new FormData();
   data.append('file', file);
   data.append('name', name);
-  return await fetch('/profile/upload-photo', {
+  return await fetch('https://loving-sitter-team-beagle.herokuapp.com/profile/upload-photo', {
     method: 'POST',
     headers: {
       // 'Content-Type': 'multipart/form-data',

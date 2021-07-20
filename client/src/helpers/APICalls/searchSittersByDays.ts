@@ -7,7 +7,7 @@ export async function searchSittersByDays(search: string): Promise<SearchProfile
         method: 'GET',
         credentials: 'include',
     };
-    return await fetch(`profile/day/${search}`, fetchOptions)
+    return await fetch(`https://loving-sitter-team-beagle.herokuapp.com/profile/day/${search}`, fetchOptions)
         .then((res) => res.json())
         .catch(() => ({
             error: { message: 'Unable to connect to server. Please try again' },

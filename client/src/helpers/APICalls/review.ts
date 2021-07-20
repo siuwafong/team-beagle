@@ -17,7 +17,7 @@ export async function addReview(
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ rating, title, body }),
   };
-  return await fetch(`/review/new-review/${sitterId}`, fetchOptions)
+  return await fetch(`https://loving-sitter-team-beagle.herokuapp.com/review/new-review/${sitterId}`, fetchOptions)
     .then((res) => res.json())
     .catch(() => ({
       error: { message: 'Unable to connect to server. Please try again' },
@@ -29,7 +29,7 @@ export async function getReview(sitterId: string): Promise<ResultsArray> {
     method: 'GET',
     credentials: 'include',
   };
-  return await fetch(`/review/${sitterId}`, fetchOptions)
+  return await fetch(`https://loving-sitter-team-beagle.herokuapp.com/review/${sitterId}`, fetchOptions)
     .then((res) => res.json())
     .catch(() => ({
       error: { message: 'Unable to connect to server. Please try again' },

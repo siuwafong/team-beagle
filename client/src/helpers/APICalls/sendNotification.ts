@@ -9,7 +9,7 @@ const sendNotification =
       credentials: 'include',
       body: JSON.stringify({ type, title, content, recipient }),
     };
-    return await fetch(`/notifications/new`, fetchOptions)
+    return await fetch(`https://loving-sitter-team-beagle.herokuapp.com/notifications/new`, fetchOptions)
       .then((res) => res.json())
       .catch(() => ({
         error: { message: 'Unable to connect to server. Please try again' },

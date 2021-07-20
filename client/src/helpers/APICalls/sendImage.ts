@@ -8,7 +8,7 @@ const sendImage = (name: string, file: string | Blob, id: string) => async (): P
   const data = new FormData();
   data.append('file', file);
   data.append('name', name);
-  return await fetch(`/message/image/${id}`, {
+  return await fetch(`https://loving-sitter-team-beagle.herokuapp.com/message/image/${id}`, {
     method: 'PATCH',
     headers: {
       // 'Content-Type': 'multipart/form-data',

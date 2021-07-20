@@ -8,7 +8,7 @@ export const createBookingRequest = async (data: NewRequest): Promise<CreateRequ
         body: JSON.stringify({ ...data }),
         credentials: 'include',
   };
-  return await fetch('/request/new-request', fetchOptions)
+  return await fetch('https://loving-sitter-team-beagle.herokuapp.com/request/new-request', fetchOptions)
         .then((res) => res.json())
     .catch(() => ({
       error: { message: 'Unable to connect to server. Please try again' },
