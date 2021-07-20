@@ -83,7 +83,7 @@ function onListening() {
   var addr = server.address();
   var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
 
-  console.log(`Listening on ${bind}`.red.underline.bold);
+  console.log(`Listening on ${bind}`);
 }
 
 server.listen(process.env.PORT);
@@ -145,7 +145,7 @@ app.use(errorHandler);
 
 // Handle unhandled promise rejections
 process.on('unhandledRejection', (err, promise) => {
-  console.log(`Error: ${err.message}`.red);
+  console.log(`Error: ${err.message}`);
   // Close server & exit process
   server.close(() => process.exit(1));
 });
