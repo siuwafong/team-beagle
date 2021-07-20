@@ -1,3 +1,6 @@
+**Link**
+The app can be found on [link](https://happy-heyrovsky-5a1d90.netlify.app) (NOTE: at the moment the link only works on Firefox due to issues with storing cookies. This will be resolved at a later date)
+
 ## Loving Sitter
 
 Loving Sitter is a full-stack CRUD website that helps dog owners find dogsitters. Users can create accounts and find dogsitters based on their location and schedule. The site also includes real-timemessaging functionality between users for streamlined communication between dog owners and dogsitters. Payments to dogsitters is done using Stripe. Dog owners can submit reviews of dogsitters after receiving dogsitting services.
