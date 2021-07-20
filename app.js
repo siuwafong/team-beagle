@@ -130,6 +130,7 @@ app.use(
 app.use(
   session({
     secret: process.env.SESSION_SECRET,
+    secureProxy: true,
     resave: true,
     saveUninitialized: false,
     cookie: {
