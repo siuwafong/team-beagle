@@ -27,7 +27,7 @@ const server = http.createServer(app);
 var port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
 
-var server = require('../app').server;
+// var server = require('../app').server;
 
 /**
  * Listen on provided port, on all network interfaces.
