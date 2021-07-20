@@ -6,7 +6,7 @@ const getUnreadNotifications = () => async (): Promise<any> => {
     headers: { 'Content-Type': 'application/json' },
     credentials: 'include',
   };
-  return await fetch(`/notifications/unread`, fetchOptions)
+  return await fetch(`https://loving-sitter-team-beagle.herokuapp.com/notifications/unread`, fetchOptions)
     .then((res) => res.json())
     .catch(() => ({
       error: { message: 'Unable to connect to server. Please try again' },

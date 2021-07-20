@@ -12,7 +12,7 @@ const sendMessage = (id: string, type: string, content: string) => async (): Pro
     credentials: 'include',
     body: JSON.stringify({ type, content }),
   };
-  return await fetch(`/message/${id}`, fetchOptions)
+  return await fetch(`https://loving-sitter-team-beagle.herokuapp.com/message/${id}`, fetchOptions)
     .then((res) => res.json())
     .catch(() => ({
       error: { message: 'Unable to connect to server. Please try again' },

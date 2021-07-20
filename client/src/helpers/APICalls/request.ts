@@ -42,7 +42,7 @@ export async function deleteBooking(id: string): Promise<Request> {
     method: 'Delete',
     credentials: 'include',
   };
-  return await fetch(`/request/delete/${id}`, fetchOptions)
+  return await fetch(`https://loving-sitter-team-beagle.herokuapp.com/request/delete/${id}`, fetchOptions)
     .then((res) => res.json())
     .catch(() => ({
       error: { message: 'Unable to connect to server. Please try again' },
@@ -56,7 +56,7 @@ export async function updateBookingsPaid(id: string, paid: boolean): Promise<Req
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ paid }),
   };
-  return await fetch(`/request/edit-request/${id}`, fetchOptions)
+  return await fetch(`https://loving-sitter-team-beagle.herokuapp.com/request/edit-request/${id}`, fetchOptions)
     .then((res) => res.json())
     .catch(() => ({
       error: { message: 'Unable to connect to server. Please try again' },

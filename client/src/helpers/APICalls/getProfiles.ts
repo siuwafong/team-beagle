@@ -6,7 +6,7 @@ const getProfiles = async(): Promise<SearchProfileApiData> => {
     method: 'GET',
     credentials: 'include',
   };
-  return await fetch(`/profile/sitters`, fetchOptions)
+  return await fetch(`https://loving-sitter-team-beagle.herokuapp.com/profile/sitters`, fetchOptions)
     .then((res) => res.json())
     .catch(() => ({
       error: { message: 'Unable to connect to server. Please try again' },
