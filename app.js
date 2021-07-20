@@ -135,6 +135,8 @@ app.use(
     cookie: {
       sameSite: 'none', // must be 'none' to enable cross-site delivery
       secure: true, // must be true if sameSite='none'
+      path: '/',
+      // httpOnly: true
     },
   })
 );
