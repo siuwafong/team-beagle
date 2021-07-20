@@ -19,6 +19,8 @@ const { json, urlencoded } = express;
 const cors = require('cors');
 const { appSocket } = require('./socket/index');
 
+const session = require('express-session');
+
 connectDB();
 const app = express();
 const server = http.createServer(app);
