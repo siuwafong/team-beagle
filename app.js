@@ -24,6 +24,7 @@ const app = express();
 const server = http.createServer(app);
 
 // --------------------------------
+app.set('trust proxy', 1);
 var port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
 
