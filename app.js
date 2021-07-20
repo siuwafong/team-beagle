@@ -125,6 +125,17 @@ app.use(
   })
 );
 
+app.use(
+  session({
+    resave: true,
+    saveUninitialized: false,
+    cookie: {
+      sameSite: 'none', // must be 'none' to enable cross-site delivery
+      secure: true, // must be true if sameSite='none'
+    },
+  })
+);
+
 app.use('/auth', authRouter);
 app.use('/users', userRouter);
 app.use('/request', requestRouter);
