@@ -129,6 +129,7 @@ app.use(
 
 app.use(
   session({
+    secret: prcoess.env.SESSION_SECRET,
     resave: true,
     saveUninitialized: false,
     cookie: {
