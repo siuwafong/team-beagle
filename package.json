@@ -16,6 +16,7 @@
     "cloudinary": "^1.26.1",
     "colors": "^1.4.0",
     "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^8.6.0",
     "eslint": "^7.30.0",

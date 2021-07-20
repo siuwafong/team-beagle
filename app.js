@@ -19,7 +19,7 @@ const { json, urlencoded } = express;
 const cors = require('cors');
 const { appSocket } = require('./socket/index');
 
-const session = require('express-session');
+const session = require('cookie-session');
 
 connectDB();
 const app = express();
