@@ -118,10 +118,12 @@ app.use((req, res, next) => {
   next();
 });
 
-// app.use((req, res, next) => {
-//   req.io = io;
-//   next();
-// });
+app.use(
+  cors({
+    credentials: true,
+    origin: 'https://happy-heyrovsky-5a1d90.netlify.app',
+  })
+);
 
 app.use('/auth', authRouter);
 app.use('/users', userRouter);
