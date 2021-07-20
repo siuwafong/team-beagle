@@ -1,4 +1,3 @@
-**Link**
 The app can be found on [link](https://happy-heyrovsky-5a1d90.netlify.app) (NOTE: at the moment the link only works on Firefox due to issues with storing cookies. This will be resolved at a later date)
 
 ## Loving Sitter
